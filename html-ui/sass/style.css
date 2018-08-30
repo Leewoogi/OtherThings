@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* line 12, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+body {
+  font: 100% sans-serif;
+  color: #444; }
+
+/* line 17, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.toggleWrapper {
+  height: auto; }
+
+/* line 18, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.toggleGroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+  /* line 25, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .toggleGroup input {
+    position: absolute;
+    left: -99em; }
+  /* line 29, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .toggleGroup:before {
+    content: '집';
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    font-size: 18px; }
+  /* line 37, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .toggleGroup:after {
+    content: '회사';
+    position: absolute;
+    right: -48px;
+    top: 15px;
+    font-size: 18px;
+    color: #749ED7; }
+
+/* line 47, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 50px;
+  background-color: #83D8FF;
+  border-radius: 84px;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+/* line 59, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  width: 44px;
+  height: 44px;
+  background-color: #FFCF96;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg); }
+
+/* line 74, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.home {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  left: 30%;
+  transform: translate3d(-50%, -50%, 0); }
+  /* line 81, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .home .inner {
+    position: relative; }
+    /* line 83, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+    .home .inner span {
+      position: absolute;
+      background-color: black;
+      padding: 15px 15px;
+      border: 3px solid white;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer; }
+      /* line 91, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .home .inner span.hidden {
+        visibility: hidden; }
+      /* line 94, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .home .inner span:last-child {
+        background-color: #1D242B;
+        padding: 13px 15px;
+        color: #fff; }
+      /* line 99, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .home .inner span:nth-child(1) {
+        background-color: lightblue; }
+        /* line 101, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .home .inner span:nth-child(1).show {
+          transform: rotate(-45deg) translate(-100px) rotate(45deg); }
+      /* line 105, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .home .inner span:nth-child(2) {
+        background-color: #2492FF; }
+        /* line 107, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .home .inner span:nth-child(2).show {
+          transform: rotate(0deg) translate(-100px) rotate(0deg); }
+      /* line 111, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .home .inner span:nth-child(3) {
+        background-color: #F34541; }
+        /* line 113, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .home .inner span:nth-child(3).show {
+          transform: rotate(45deg) translate(-100px) rotate(-45deg); }
+
+/* line 121, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.company {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  right: 30%;
+  transform: translate3d(50%, -50%, 0); }
+  /* line 127, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .company .inner {
+    position: relative; }
+    /* line 129, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+    .company .inner span {
+      position: absolute;
+      background-color: black;
+      padding: 15px 15px;
+      border: 3px solid white;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer; }
+      /* line 137, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .company .inner span.hidden {
+        visibility: hidden; }
+      /* line 140, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .company .inner span:last-child {
+        background-color: #1D242B;
+        padding: 13px 15px;
+        color: #fff; }
+      /* line 145, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .company .inner span:nth-child(1) {
+        background-color: lightblue; }
+        /* line 147, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .company .inner span:nth-child(1).show {
+          transform: rotate(45deg) translate(100px) rotate(-45deg); }
+      /* line 151, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .company .inner span:nth-child(2) {
+        background-color: #2492FF; }
+        /* line 153, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .company .inner span:nth-child(2).show {
+          transform: rotate(0deg) translate(100px) rotate(0deg); }
+      /* line 157, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      .company .inner span:nth-child(3) {
+        background-color: #F34541; }
+        /* line 159, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+        .company .inner span:nth-child(3).show {
+          transform: rotate(-45deg) translate(100px) rotate(45deg); }
+
+/* line 166, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.coper-txt {
+  position: absolute;
+  top: 50px;
+  color: #333;
+  font-size: 18px; }
+
+/* line 170, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+.share {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  margin: 20px 0 0; }
+  /* line 177, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  .share .icon {
+    float: left;
+    background: #333;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    margin: 0 -20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%; }
+    /* line 188, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+    .share .icon i {
+      color: #fff;
+      vertical-align: middle;
+      font-size: 24px; }
+
+/* line 193, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+input:checked + .toggle {
+  background-color: #749DD6; }
+  /* line 196, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  input:checked + .toggle:before {
+    color: #749ED7; }
+  /* line 200, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  input:checked + .toggle:after {
+    color: #ffffff; }
+  /* line 204, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  input:checked + .toggle .toggle__handler {
+    background-color: #FFE5B5;
+    transform: translate3d(40px, 0, 0) rotate(0); }
+  /* line 208, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+  input:checked + .toggle .share {
+    opacity: 1;
+    visibility: inherit; }
+    /* line 211, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+    input:checked + .toggle .share .icon {
+      margin: 0 10px; }
+      /* line 213, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      input:checked + .toggle .share .icon:nth-child(1) {
+        background-color: #F34541; }
+      /* line 216, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      input:checked + .toggle .share .icon:nth-child(2) {
+        background-color: #2492FF; }
+      /* line 219, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      input:checked + .toggle .share .icon:nth-child(3) {
+        background-color: sandybrown; }
+      /* line 222, /Users/byoenglee/Desktop/html-ui/sass/style.scss */
+      input:checked + .toggle .share .icon:nth-child(4) {
+        background-color: #38B87C; }
+
+/*# sourceMappingURL=style.css.map */

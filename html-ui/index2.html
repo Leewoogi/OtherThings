@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" href="/sass/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    </head>
+
+    <body>
+        <div class="toggleWrapper">
+            <div class="home">
+                <div class="inner">
+                    <span class="hidden"><i class="far fa-grin fa-2x"></i></span>
+                    <span class="hidden"><i class="far fa-flushed fa-2x"></i></span>
+                    <span class="hidden"><i class="far fa-tired fa-2x"></i></span>
+                    <span><i class="fa fa-home"></i></span>
+                </div>
+            </div>
+            <div class="toggleGroup">
+                <input type="checkbox" class="dn" id="dn"/>
+                <label for="dn" class="toggle">
+                    <div class="toggle__handler">
+                    </div>
+                    <div class="share">
+                      <div class="icon first"><i class="far fa-times-circle"></i></div>
+                      <div class="icon"><i class="far fa-clock"></i></div>
+                      <div class="icon"><i class="far fa-frown"></i></div>
+                      <div class="icon last"><i class="far fa-grin"></i></div>
+                    </div>
+                </label>
+            </div>
+                    
+            <div class="company">
+                <div class="inner">
+                    <span class="hidden"><i class="far fa-grin fa-2x"></i></span>
+                    <span class="hidden"><i class="far fa-flushed fa-2x"></i></span>
+                    <span class="hidden"><i class="far fa-tired fa-2x"></i></span>
+                    <span><i class="fa fa-home"></i></span>
+                </div>
+            </div>
+        </div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+        
+        $(document).ready(function(){
+            $('.home span:last-child').click(function(){
+                $('.home span').not(':last-child').toggleClass('hidden show') ;
+            })
+            
+            $('.company span:last-child').click(function(){
+                $('.company span').not(':last-child').toggleClass('hidden show') ;
+            })
+        })
+            
+        </script>
+    </body>
+</html>
